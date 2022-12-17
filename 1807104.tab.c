@@ -481,11 +481,11 @@ static const yytype_int8 yyrhs[] =
 /* YYRLINE[YYN] -- source line where rule number YYN was defined.  */
 static const yytype_uint16 yyrline[] =
 {
-       0,    45,    45,    47,    52,    53,    55,    61,    70,    81,
-      90,    97,   106,   115,   124,   139,   151,   163,   171,   195,
-     201,   208,   216,   221,   222,   223,   228,   229,   231,   232,
-     235,   236,   239,   241,   246,   248,   250,   252,   254,   256,
-     266,   276,   278,   280,   282,   284,   286,   289
+       0,    45,    45,    46,    51,    52,    54,    60,    69,    80,
+      89,    96,   105,   114,   123,   138,   150,   162,   170,   194,
+     200,   207,   215,   220,   221,   222,   227,   228,   230,   231,
+     234,   235,   238,   240,   245,   247,   249,   251,   253,   255,
+     265,   275,   277,   279,   281,   283,   285,   288
 };
 #endif
 
@@ -1490,14 +1490,14 @@ yyreduce:
         case 5:
 
 /* Line 1455 of yacc.c  */
-#line 53 "1807104.y"
+#line 52 "1807104.y"
     { printf("Declaration\n"); variablenumber++;;}
     break;
 
   case 6:
 
 /* Line 1455 of yacc.c  */
-#line 55 "1807104.y"
+#line 54 "1807104.y"
     {   printf("\nvalue of expression: %d\n", (yyvsp[(1) - (2)])); 
 		(yyval)=(yyvsp[(1) - (2)]);
 		printf("\n.........................................\n");
@@ -1508,7 +1508,7 @@ yyreduce:
   case 7:
 
 /* Line 1455 of yacc.c  */
-#line 61 "1807104.y"
+#line 60 "1807104.y"
     { 
 							printf("\nValue of the variable: %d\n",(yyvsp[(3) - (4)]));
 							sym[(yyvsp[(1) - (4)])]=(yyvsp[(3) - (4)]);
@@ -1521,7 +1521,7 @@ yyreduce:
   case 8:
 
 /* Line 1455 of yacc.c  */
-#line 70 "1807104.y"
+#line 69 "1807104.y"
     {
 								if((yyvsp[(3) - (11)])){
 									printf("value of expression in IF: %d\n",(yyvsp[(6) - (11)]));
@@ -1538,7 +1538,7 @@ yyreduce:
   case 9:
 
 /* Line 1455 of yacc.c  */
-#line 81 "1807104.y"
+#line 80 "1807104.y"
     {
 	                                int i;
 	                                printf("WHILE loop is started");
@@ -1553,7 +1553,7 @@ yyreduce:
   case 10:
 
 /* Line 1455 of yacc.c  */
-#line 90 "1807104.y"
+#line 89 "1807104.y"
     {
 	                                int i;
 	                                printf("WHILE loop is started");
@@ -1566,7 +1566,7 @@ yyreduce:
   case 11:
 
 /* Line 1455 of yacc.c  */
-#line 97 "1807104.y"
+#line 96 "1807104.y"
     {
 	                                int i;
 	                                printf("WHILE loop is started");
@@ -1581,7 +1581,7 @@ yyreduce:
   case 12:
 
 /* Line 1455 of yacc.c  */
-#line 106 "1807104.y"
+#line 105 "1807104.y"
     {
 	                                int i;
 	                                printf("WHILE loop is started");
@@ -1596,13 +1596,13 @@ yyreduce:
   case 13:
 
 /* Line 1455 of yacc.c  */
-#line 115 "1807104.y"
+#line 114 "1807104.y"
     {
 	                                int i;
 	                                printf("FOR loop is started");
 	                                for(i=(yyvsp[(3) - (11)]) ; i<(yyvsp[(5) - (11)]) ; i=i+(yyvsp[(7) - (11)]) ) 
 	                                {printf("\n i value: %d expression value : %d\n", i,(yyvsp[(10) - (11)]));}
-	                                printf("\n FOR loop is ended n");
+	                                printf("\n FOR loop is ended \n");
 
 				               fornumber++;
 				               ;}
@@ -1611,7 +1611,7 @@ yyreduce:
   case 14:
 
 /* Line 1455 of yacc.c  */
-#line 124 "1807104.y"
+#line 123 "1807104.y"
     {
 		printf("\nFACTO Function is called\n");
 		int i;
@@ -1631,7 +1631,7 @@ yyreduce:
   case 15:
 
 /* Line 1455 of yacc.c  */
-#line 139 "1807104.y"
+#line 138 "1807104.y"
     {
 		printf("OddEven Function is called\n");
 
@@ -1649,7 +1649,7 @@ yyreduce:
   case 16:
 
 /* Line 1455 of yacc.c  */
-#line 151 "1807104.y"
+#line 150 "1807104.y"
     {
 		printf("POWER Function is called\n");
 		int p=1;
@@ -1667,7 +1667,7 @@ yyreduce:
   case 17:
 
 /* Line 1455 of yacc.c  */
-#line 163 "1807104.y"
+#line 162 "1807104.y"
     {
 		printf("\nSWITCH CASE Declaration\n");
 		printf("\nFinally Choose Case number :-> %d\n",(yyvsp[(3) - (7)]));
@@ -1679,7 +1679,7 @@ yyreduce:
   case 18:
 
 /* Line 1455 of yacc.c  */
-#line 171 "1807104.y"
+#line 170 "1807104.y"
     {
 		
 			int i;
@@ -1708,7 +1708,7 @@ yyreduce:
   case 19:
 
 /* Line 1455 of yacc.c  */
-#line 195 "1807104.y"
+#line 194 "1807104.y"
     {printf("\nPrint Expression %d\n",(yyvsp[(3) - (5)]));
 		printnumber++;
 		(yyval)=(yyvsp[(3) - (5)]);
@@ -1719,7 +1719,7 @@ yyreduce:
   case 20:
 
 /* Line 1455 of yacc.c  */
-#line 201 "1807104.y"
+#line 200 "1807104.y"
     {
 		printf("\nIncrement operation\n");
 		sym[(yyvsp[(1) - (4)])]++;
@@ -1731,7 +1731,7 @@ yyreduce:
   case 21:
 
 /* Line 1455 of yacc.c  */
-#line 208 "1807104.y"
+#line 207 "1807104.y"
     {
 		printf("\nDecrement operation\n");
 		sym[(yyvsp[(1) - (4)])]--;
@@ -1743,7 +1743,7 @@ yyreduce:
   case 22:
 
 /* Line 1455 of yacc.c  */
-#line 216 "1807104.y"
+#line 215 "1807104.y"
     {printf("\nvariable declaration\n");
 		printf("\n.........................................\n");;}
     break;
@@ -1751,35 +1751,35 @@ yyreduce:
   case 23:
 
 /* Line 1455 of yacc.c  */
-#line 221 "1807104.y"
+#line 220 "1807104.y"
     {printf("interger declaration\n");;}
     break;
 
   case 24:
 
 /* Line 1455 of yacc.c  */
-#line 222 "1807104.y"
+#line 221 "1807104.y"
     {printf("float declaration\n");;}
     break;
 
   case 25:
 
 /* Line 1455 of yacc.c  */
-#line 223 "1807104.y"
+#line 222 "1807104.y"
     {printf("char declaration\n");;}
     break;
 
   case 32:
 
 /* Line 1455 of yacc.c  */
-#line 239 "1807104.y"
+#line 238 "1807104.y"
     {printf("Case No : %d & expression value :%d \n",(yyvsp[(2) - (5)]),(yyvsp[(4) - (5)]));;}
     break;
 
   case 33:
 
 /* Line 1455 of yacc.c  */
-#line 241 "1807104.y"
+#line 240 "1807104.y"
     {
  				printf("\nDefault case & expression value : %d",(yyvsp[(3) - (4)]));
  			;}
@@ -1788,42 +1788,42 @@ yyreduce:
   case 34:
 
 /* Line 1455 of yacc.c  */
-#line 246 "1807104.y"
+#line 245 "1807104.y"
     { printf("\nNumber :  %d\n",(yyvsp[(1) - (1)]) ); (yyval) = (yyvsp[(1) - (1)]);  ;}
     break;
 
   case 35:
 
 /* Line 1455 of yacc.c  */
-#line 248 "1807104.y"
+#line 247 "1807104.y"
     { (yyval) = sym[(yyvsp[(1) - (1)])]; ;}
     break;
 
   case 36:
 
 /* Line 1455 of yacc.c  */
-#line 250 "1807104.y"
+#line 249 "1807104.y"
     {printf("\nAddition :%d+%d = %d \n",(yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]),(yyvsp[(1) - (3)])+(yyvsp[(3) - (3)]) );  (yyval) = (yyvsp[(1) - (3)]) + (yyvsp[(3) - (3)]);;}
     break;
 
   case 37:
 
 /* Line 1455 of yacc.c  */
-#line 252 "1807104.y"
+#line 251 "1807104.y"
     {printf("\nSubtraction :%d - %d = %d \n ",(yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]),(yyvsp[(1) - (3)])-(yyvsp[(3) - (3)])); (yyval) = (yyvsp[(1) - (3)]) - (yyvsp[(3) - (3)]); ;}
     break;
 
   case 38:
 
 /* Line 1455 of yacc.c  */
-#line 254 "1807104.y"
+#line 253 "1807104.y"
     {printf("\nMultiplication :%d * %d = %d \n ",(yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]),(yyvsp[(1) - (3)])*(yyvsp[(3) - (3)])); (yyval) = (yyvsp[(1) - (3)]) * (yyvsp[(3) - (3)]); ;}
     break;
 
   case 39:
 
 /* Line 1455 of yacc.c  */
-#line 256 "1807104.y"
+#line 255 "1807104.y"
     { if((yyvsp[(3) - (3)])){
 				     					printf("\nDivision :%d / %d = %d \n ",(yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]),(yyvsp[(1) - (3)])/(yyvsp[(3) - (3)]));
 				     					(yyval) = (yyvsp[(1) - (3)]) / (yyvsp[(3) - (3)]);
@@ -1839,7 +1839,7 @@ yyreduce:
   case 40:
 
 /* Line 1455 of yacc.c  */
-#line 266 "1807104.y"
+#line 265 "1807104.y"
     { if((yyvsp[(3) - (3)])){
 				     					printf("\nMod :%d %% %d %d \n",(yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]),(yyvsp[(1) - (3)]) % (yyvsp[(3) - (3)]));
 				     					(yyval) = (yyvsp[(1) - (3)]) % (yyvsp[(3) - (3)]);
@@ -1855,49 +1855,49 @@ yyreduce:
   case 41:
 
 /* Line 1455 of yacc.c  */
-#line 276 "1807104.y"
+#line 275 "1807104.y"
     {printf("\nPower  :%d ^ %d = %d \n",(yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]),(yyvsp[(1) - (3)]) ^ (yyvsp[(3) - (3)]));  (yyval) = pow((yyvsp[(1) - (3)]) , (yyvsp[(3) - (3)]));;}
     break;
 
   case 42:
 
 /* Line 1455 of yacc.c  */
-#line 278 "1807104.y"
+#line 277 "1807104.y"
     {printf("\nLess Than :%d < %d = %d\n",(yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]),(yyvsp[(1) - (3)]) < (yyvsp[(3) - (3)])); (yyval) = (yyvsp[(1) - (3)]) < (yyvsp[(3) - (3)]) ; ;}
     break;
 
   case 43:
 
 /* Line 1455 of yacc.c  */
-#line 280 "1807104.y"
+#line 279 "1807104.y"
     {printf("\nGreater than :%d > %d = %d\n ",(yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]),(yyvsp[(1) - (3)]) > (yyvsp[(3) - (3)])); (yyval) = (yyvsp[(1) - (3)]) > (yyvsp[(3) - (3)]); ;}
     break;
 
   case 44:
 
 /* Line 1455 of yacc.c  */
-#line 282 "1807104.y"
+#line 281 "1807104.y"
     {printf("\nValue of Sin(%d) is : %lf\n",(yyvsp[(2) - (2)]),sin((yyvsp[(2) - (2)])*3.1416/180)); (yyval)=sin((yyvsp[(2) - (2)])*3.1416/180);;}
     break;
 
   case 45:
 
 /* Line 1455 of yacc.c  */
-#line 284 "1807104.y"
+#line 283 "1807104.y"
     {printf("\nValue of Cos(%d) is : %lf\n",(yyvsp[(2) - (2)]),cos((yyvsp[(2) - (2)])*3.1416/180)); (yyval)=cos((yyvsp[(2) - (2)])*3.1416/180);;}
     break;
 
   case 46:
 
 /* Line 1455 of yacc.c  */
-#line 286 "1807104.y"
+#line 285 "1807104.y"
     {printf("Value of Tan(%d) is %lf\n",(yyvsp[(2) - (2)]),tan((yyvsp[(2) - (2)])*3.1416/180)); (yyval)=tan((yyvsp[(2) - (2)])*3.1416/180);;}
     break;
 
   case 47:
 
 /* Line 1455 of yacc.c  */
-#line 289 "1807104.y"
+#line 288 "1807104.y"
     {	 (yyval) = (yyvsp[(2) - (3)]); ;}
     break;
 

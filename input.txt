@@ -1,58 +1,63 @@
-HASHINC stdio.h
-HASHINC string.h
-HASHINC stdlib.h
 
-INTEGER SUPREME()
-{
-INTEGER x=10;
-NOTINTEGER y=2.5;
-LETTER A = 'V';
+import "math.h"
 
-//for loop
-FORLOOP(INTEGER i=0; i<x; i++)
+
+FORLOOP(2,10,2)
 {
-    OUTPUT("This line will be printed");
+    ;
 }
 
-// while loop 
+WHILELOOP(3 < 5)
+{
+    ;
+}
 
+WHILELOOP(11 <= 13)
+{
+    ;
+}
+
+WHILELOOP(10 > 4)
+{
+    ;
+}
+
+FACTO(4);
+
+POWERFUNC(4,3);
+
+CHECKODDEVEN(29);
+
+INTEGER _x;
+_x = 11;
+
+_x++;
+
+
+
+_x--;
+
+
+
+NONINTEGER _b;
+
+LETTER _a;
+
+MATCH(2){OPTION 2: ;}
+
+
+
+WHETHER(5>3)
+{
+    _x--;
+}OTHERWISE
+{
+    _x++;
+}
+
+SUPREME:
+{
     
-WHILELOOP(x>0)
-{
-    WHETHER(x==2)
-    {
-        OUTPUT("X is equal to 2 found!");
-        KILL;
-    }
-    ELIF(x==5)
-    {
-        OUTPUT("will continue");
-        FLOW;
-    }
-    x--;
 }
 
-MATCH(A){
-	OPTION 'A' SUCHTHAT
-    OUTPUT("A");
-    KILL;
-	OPTION 'B' SUCHTHAT
-    OUTPUT("B");
-    KILL;
-	OPTION 'C' SUCHTHAT
-    OUTPUT("C");
-    KILL;
-	OPTION 'D' SUCHTHAT
-    OUTPUT("D"); 
-    KILL;
-    OPTION 'E' SUCHTHAT
-    OUTPUT("E");
-    KILL;
-    OPTION 'V' SUCHTHAT
-    OUTPUT("V"); 
-    KILL;
-	DEFAULT SUCHTHAT
-    TAKE("%f",&y); 
-    KILL;
-}
-}
+
