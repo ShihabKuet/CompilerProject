@@ -732,7 +732,7 @@ YY_RULE_SETUP
 case 2:
 YY_RULE_SETUP
 #line 33 "1807104.l"
-{ return SUPREME; }
+{ printf("\nMain Function Started\n"); return SUPREME; }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
@@ -857,7 +857,7 @@ YY_RULE_SETUP
 case 27:
 YY_RULE_SETUP
 #line 60 "1807104.l"
-{return CHECKODDEVEN;}
+{ return CHECKODDEVEN; }
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
@@ -867,7 +867,7 @@ YY_RULE_SETUP
 case 29:
 YY_RULE_SETUP
 #line 63 "1807104.l"
-{ printf("%d",atoi(yytext)); return DIGIT; }
+{ yylval = atoi(yytext); return DIGIT; }
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
@@ -1821,6 +1821,7 @@ int main()
 {
 	yyin = freopen("input.txt","r",stdin);
 	yyout = freopen("output.txt","w",stdout);
-	yylex();
+	yyparse();
+	return 0;
 }
 

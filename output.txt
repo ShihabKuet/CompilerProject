@@ -1,61 +1,75 @@
-#include  stdio.h
-#include  string.h
-#include  stdlib.h
 
-int  main ()
-{
-int  x=10;
-float  y=2.5;
-char  A = 'V';
+Header file:
+import "math.h"
+FOR loop is started
+ i value: 2 expression value : 59
 
-SINGLE_LINE_COMMENT
-for loop
-for(int  i=0; i<x; i++)
-{
-    printf ("This line will be printed");
-}
+ i value: 4 expression value : 59
 
-SINGLE_LINE_COMMENT
- while loop 
+ i value: 6 expression value : 59
 
-    
-while 
-(x>0)
-{
-    if (x==2)
-    {
-        printf ("X is equal to 2 found!");
-        break;
-    }
-    else if (x==5)
-    {
-        printf ("will continue");
-        continue;
-    }
-    x--;
-}
+ i value: 8 expression value : 59
 
-switch (A){
-	case  'A' : 
-    printf ("A");
-    break;
-	case  'B' : 
-    printf ("B");
-    break;
-	case  'C' : 
-    printf ("C");
-    break;
-	case  'D' : 
-    printf ("D"); 
-    break;
-    case  'E' : 
-    printf ("E");
-    break;
-    case  'V' : 
-    printf ("V"); 
-    break;
-	DEFAULT : 
-    scanf ("%f",&y); 
-    break;
-}
-}
+ FOR loop is ended 
+WHILE loop is started
+value: 3 expression value: 59
+
+value: 4 expression value: 59
+WHILE loop finished
+WHILE loop is started
+loop: 11 expression value: 59
+
+loop: 12 expression value: 59
+
+loop: 13 expression value: 59
+WHILE loop finished
+WHILE loop is started
+loop: 10 expression value: 59
+
+loop: 9 expression value: 59
+
+loop: 8 expression value: 59
+
+loop: 7 expression value: 59
+
+loop: 6 expression value: 59
+
+loop: 5 expression value: 59
+WHILE loop finished
+
+FACTO Function is called
+FACTORIAL of 4 is : 24
+
+facto function is finished
+POWER Function is called
+Value is :64
+
+ Power function is finished 
+OddEven Function is called
+Number is :29 is Odd
+
+ oddeven function is finished 
+interger declaration
+_x
+
+variable declaration
+
+.........................................
+Declaration
+_x
+
+Number :  11
+
+Value of the variable: 11
+
+.........................................
+_x
+
+Increment operation
+
+ After increment the value is 12
+_x
+
+Decrement operation
+
+ After decrement the value is 11

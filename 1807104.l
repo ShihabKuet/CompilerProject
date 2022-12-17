@@ -30,7 +30,7 @@ HEADER	"import ".*
 %%
 
 "HASHINC" 		{ printf("#include "); }
-"SUPREME"		{ return SUPREME; }
+"SUPREME"		{ printf("\nMain Function Started\n"); return SUPREME; }
 "{" 		    { return BRACKETFIRST; }
 "}"  		    { return BRACKETLAST; }
 
@@ -57,10 +57,10 @@ HEADER	"import ".*
 
 "POWERFUNC"		{ return POWERFUNC; }
 "FACTO"		    { return FACTO; }
-"CHECKODDEVEN"		{return CHECKODDEVEN;}
+"CHECKODDEVEN"	{ return CHECKODDEVEN; }
 
 {HEADER}  		     { printf("\nHeader file:\n"); ECHO; printf("\n"); }
-{DIGIT}+	         { printf("%d",atoi(yytext)); return DIGIT; }
+{DIGIT}+	         { yylval = atoi(yytext); return DIGIT; }
 {VARIABLE}	         { ECHO; printf("\n"); yylval = *yytext - 'a'; return VARIABLE; }
 {VARCHAR}            { yylval = get_str_val(yytext); return VARCHAR; }
 [-+/*<>=,():;%^]     { yylval = yytext[0];	return *yytext;	}
@@ -68,8 +68,8 @@ HEADER	"import ".*
 [\n]*				 {}
 [\t]*				 {}
 
-"//" {printf("SINGLE_LINE_COMMENT\n");}
-"/*"[.]*"*/" {printf("MULTIPLE_LINE_COMMENT\n"); }
+"//"                 {printf("SINGLE_LINE_COMMENT\n");}
+"/*"[.]*"*/"         {printf("MULTIPLE_LINE_COMMENT\n"); }
 
 .					 { printf("\nUnknown Syntax : %s\n",yytext); }
 
@@ -88,6 +88,7 @@ int main()
 {
 	yyin = freopen("input.txt","r",stdin);
 	yyout = freopen("output.txt","w",stdout);
-	yylex();
+	yyparse();
+	return 0;
 }
 

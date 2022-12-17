@@ -42,10 +42,9 @@
 
 
 
-line: /* NULL */
-
+line: /* NULL */ 
 	| line statement
-	;
+	 ;
 program: SUPREME ':' BRACKETFIRST line BRACKETLAST {printf("Main function END\n");}
 	 ;
 
@@ -112,12 +111,12 @@ statement: ';'
 	                                printf("WHILE loop finished\n");								
 				               whilenumber++;
 				               }
-	| FORLOOP '(' DIGIT ',' DIGIT ',' DIGIT ')' BRACKETFIRST  statement BRACKETLAST {
+	| FORLOOP '(' DIGIT ',' DIGIT ',' DIGIT ')' BRACKETFIRST statement BRACKETLAST {
 	                                int i;
 	                                printf("FOR loop is started");
 	                                for(i=$3 ; i<$5 ; i=i+$7 ) 
 	                                {printf("\n i value: %d expression value : %d\n", i,$10);}
-	                                printf("\n FOR loop is ended n");
+	                                printf("\n FOR loop is ended \n");
 
 				               fornumber++;
 				               }
@@ -287,6 +286,11 @@ expression: DIGIT					{ printf("\nNumber :  %d\n",$1 ); $$ = $1;  }
    
 
 	| '(' expression ')'		{	 $$ = $2; };
+
+
+
+
+
 	
 	
 
