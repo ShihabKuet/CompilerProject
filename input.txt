@@ -1,0 +1,58 @@
+HASHINC stdio.h
+HASHINC string.h
+HASHINC stdlib.h
+
+INTEGER SUPREME()
+{
+INTEGER x=10;
+NOTINTEGER y=2.5;
+LETTER A = 'V';
+
+//for loop
+FORLOOP(INTEGER i=0; i<x; i++)
+{
+    OUTPUT("This line will be printed");
+}
+
+// while loop 
+
+    
+WHILELOOP(x>0)
+{
+    WHETHER(x==2)
+    {
+        OUTPUT("X is equal to 2 found!");
+        KILL;
+    }
+    ELIF(x==5)
+    {
+        OUTPUT("will continue");
+        FLOW;
+    }
+    x--;
+}
+
+MATCH(A){
+	OPTION 'A' SUCHTHAT
+    OUTPUT("A");
+    KILL;
+	OPTION 'B' SUCHTHAT
+    OUTPUT("B");
+    KILL;
+	OPTION 'C' SUCHTHAT
+    OUTPUT("C");
+    KILL;
+	OPTION 'D' SUCHTHAT
+    OUTPUT("D"); 
+    KILL;
+    OPTION 'E' SUCHTHAT
+    OUTPUT("E");
+    KILL;
+    OPTION 'V' SUCHTHAT
+    OUTPUT("V"); 
+    KILL;
+	DEFAULT SUCHTHAT
+    TAKE("%f",&y); 
+    KILL;
+}
+}

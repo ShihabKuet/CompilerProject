@@ -1,0 +1,61 @@
+#include  stdio.h
+#include  string.h
+#include  stdlib.h
+
+int  main ()
+{
+int  x=10;
+float  y=2.5;
+char  A = 'V';
+
+SINGLE_LINE_COMMENT
+for loop
+for(int  i=0; i<x; i++)
+{
+    printf ("This line will be printed");
+}
+
+SINGLE_LINE_COMMENT
+ while loop 
+
+    
+while 
+(x>0)
+{
+    if (x==2)
+    {
+        printf ("X is equal to 2 found!");
+        break;
+    }
+    else if (x==5)
+    {
+        printf ("will continue");
+        continue;
+    }
+    x--;
+}
+
+switch (A){
+	case  'A' : 
+    printf ("A");
+    break;
+	case  'B' : 
+    printf ("B");
+    break;
+	case  'C' : 
+    printf ("C");
+    break;
+	case  'D' : 
+    printf ("D"); 
+    break;
+    case  'E' : 
+    printf ("E");
+    break;
+    case  'V' : 
+    printf ("V"); 
+    break;
+	DEFAULT : 
+    scanf ("%f",&y); 
+    break;
+}
+}
